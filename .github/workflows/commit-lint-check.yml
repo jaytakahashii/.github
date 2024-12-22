@@ -6,17 +6,24 @@ jobs:
   commitlint:
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
+
+      - name: Install Node.js and dependencies
+        uses: actions/setup-node@v3
+        with:
+          node-version: "lts/*"
+
       - name: Install commitlint and dependencies
         run: |
           npm install commitlint@latest @commitlint/config-conventional
 
-      - name: Validate current commit (last commit) with commitlint
+      - name: Validate current commit (push event)
         if: github.event_name == 'push'
         run: npx commitlint --last --verbose
 
-      - name: Validate pr commits with commitlint
+      - name: Validate all commits in pull request
         if: github.event_name == 'pull_request'
         run: npx commitlint --from ${{ github.event.pull_request.base.sha }} --to ${{ github.event.pull_request.head.sha }} --verbose
