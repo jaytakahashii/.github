@@ -1,11 +1,11 @@
 module.exports = {
   disableEmoji: false,
   format: '{type}{scope}: {emoji}{subject}',
-  list: ['feat', 'fix', 'refactor'], // Only required types
+  list: ['feat', 'fix', 'refactor'],
   maxMessageLength: 64,
   minMessageLength: 3,
-  questions: ['type', 'scope', 'subject', 'body'], // Mandatory questions
-  scopes: ['SRC', 'DOC', 'CI', 'ENV'], // Changed to an array of strings
+  questions: ['type', 'scope', 'subject', 'body'],
+  scopes: ['SRC', 'DOC', 'CI', 'ENV'],
   types: {
     feat: {
       description: 'A new feature',
@@ -14,12 +14,12 @@ module.exports = {
     },
     fix: {
       description: 'A bug fix',
-      emoji: '🐛',
+      emoji: '👾',
       value: 'fix',
     },
     refactor: {
       description: 'A code change that neither fixes a bug nor adds a feature',
-      emoji: '💡',
+      emoji: '♻️',
       value: 'refactor',
     },
   },
