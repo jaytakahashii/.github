@@ -1,25 +1,19 @@
-# 概要
+## Description
 
-## 変更点
+## Type of Change
 
-- 変更点1
-- 変更点2
-- 変更点3
+- [ ] 🚀 Feature
+- [ ] 🐛 Bug Fix
+- [ ] ⚡️ Performance Improvement
+- [ ] ♻️ Refactoring
+- [ ] 📝 Documentation
+- [ ] 🔧 Chore
 
-## 影響範囲
+## Related Issue
 
-このセクションでは、このPRが影響を及ぼす範囲や他の機能への影響を説明してください。
+## Checklist
 
-## テスト
-
-このセクションでは、このPRに関連するテストケースやテスト方法を記載してください。
-
-- テストケース1
-- テストケース2
-- テストケース3
-
-## 関連Issue
-
-このセクションでは、このPRが関連するIssueやタスクをリンクしてください。以下のように記述します。
-
-- close #xxx
+- [ ] My code follows the style guidelines of this project
+- [ ] I have performed a self-review of my own code
+- [ ] I have commented my code, particularly in hard-to-understand areas
+- [ ] My changes generate no new warnings
